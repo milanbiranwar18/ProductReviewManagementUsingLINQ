@@ -18,8 +18,11 @@ List<ProductReview> productReviewList = new List<ProductReview>()
 
             };
 
-foreach (var list in productReviewList)
-{
-    Console.WriteLine("ProductID:- " + list.ProducID + " " + "UserID:- " + list.UserID
-        + " " + "Rating:- " + list.Rating + " " + "Review:- " + list.Review + " " + "isLike:- " + list.isLike);
-}
+//foreach (var list in productReviewList)
+//{
+//    Console.WriteLine("ProductID:- " + list.ProducID + " " + "UserID:- " + list.UserID
+//        + " " + "Rating:- " + list.Rating + " " + "Review:- " + list.Review + " " + "isLike:- " + list.isLike);
+//}
+
+Management management = new Management();
+management.TopRecords(productReviewList);
