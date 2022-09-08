@@ -25,4 +25,7 @@ List<ProductReview> productReviewList = new List<ProductReview>()
 //}
 
 Management management = new Management();
-management.TopRecords(productReviewList);
+//management.TopRecords(productReviewList);
+
+
+ management.SelectedRecords(productReviewList);
